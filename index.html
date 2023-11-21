@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #game-container {
+        margin: 0 auto;
+        width: 800px;
+        background-color: rgba(0, 0, 255, 0.171);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      #btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+      }
+      button {
+        padding: 10px;
+        font-size: 24px;
+      }
+    </style>
     <title>Rock Paper Scissors</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="btn-container">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
+      <div id="round-result"></div>
+      <div id="score"></div>
+      <div id="game-result"></div>
+    </div>
+
     <script src="./code.js"></script>
-</body>
+  </body>
 </html>
